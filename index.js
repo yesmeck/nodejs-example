@@ -1,8 +1,8 @@
-const fastify = require('fastify')({ logger: true })
+const fastify = require('fastify')({ logger: {level: "error"} })
 
 fastify.register(require('fastify-cors'))
 
-fastify.get('/v1', function (req, reply) {
+fastify.get('/', function (req, reply) {
   return {}
 })
 

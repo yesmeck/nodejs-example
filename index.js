@@ -1,4 +1,4 @@
-const fastify = require('fastify')({ logger: {level: "error"} })
+const fastify = require('fastify')({ logger: {level: "error"}, trustProxy: true })
 
 fastify.register(require('fastify-cors'))
 

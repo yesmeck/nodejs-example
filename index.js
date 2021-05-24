@@ -3,7 +3,7 @@ const fastify = require('fastify')({ logger: {level: "error"}, trustProxy: true 
 fastify.register(require('fastify-cors'))
 
 fastify.get('/', function (req, reply) {
-  console.log(req.raw)
+  console.log(req.headers['x-real-ip'])
   return {}
 })
 

@@ -4,7 +4,6 @@ fastify.register(require('fastify-cors'))
 
 fastify.get('/', function (req, reply) {
   console.log(req.headers['x-real-ip'])
-  
   return {}
 })
 

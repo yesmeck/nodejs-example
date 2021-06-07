@@ -3,7 +3,7 @@ const fastify = require('fastify')({ logger: {level: "error"}, trustProxy: true 
 fastify.register(require('fastify-cors'))
 
 fastify.get('/', function (req, reply) {
-  return { hello: "main-update" }
+  return { hello: "main-update23" }
 })
 
 const start = async () => {

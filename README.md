@@ -1,3 +1,2 @@
 # nodejs-example
-s
-aa
+a

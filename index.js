@@ -5,8 +5,7 @@ const PORT = process.env.PORT || 3000;
 fastify.register(require('fastify-cors'))
 
 fastify.get('/', function (req, reply) {
-  console.log(process.env.TEST)
-  return { hello: "main-updatess!!" }
+  return { hello: process.env.FLY_REGION }
 })
 
 const start = async () => {

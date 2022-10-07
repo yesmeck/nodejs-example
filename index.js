@@ -6,7 +6,7 @@ fastify.register(require('fastify-cors'))
 
 fastify.get('/', function (req, reply) {
   console.log(process.env.TEST)
-  return { hello: "main-updatess!" }
+  return { hello: "main-updatess!!" }
 })
 
 const start = async () => {
